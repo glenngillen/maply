@@ -67,6 +67,8 @@ EOF
       end
       
       javascript << <<-EOF
+<script type="text/javascript">
+//<![CDATA[
 function initializeMaply#{@name.capitalize}() {
   if (GBrowserIsCompatible()) {
     var #{@name} = new google.maps.Map2(document.getElementById("#{@options[:id]}"));
